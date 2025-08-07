@@ -13,7 +13,13 @@ export default defineConfig([
     extends: ['js/recommended'],
     languageOptions: { globals: globals.node },
     rules: {
-      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-explicit-any': [
+        'off',
+        {
+          fixToUnknown: false,
+          ignoreRestArgs: true,
+        },
+      ],
     },
   },
   tseslint.configs.recommended,
