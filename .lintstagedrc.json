@@ -1,0 +1,5 @@
+{
+  "**/*.ts": ["eslint --max-warnings=0", "prettier --write"],
+  "**/*.test.ts": ["eslint --max-warnings=0", "prettier --write"],
+  "**/*.{html,json,css,scss,md,mdx}": ["prettier --write"]
+}
