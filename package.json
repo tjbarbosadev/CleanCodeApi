@@ -7,7 +7,7 @@
     "prepare": "husky",
     "check": "eslint . --ext .ts",
     "check:fix": "eslint . --ext .ts --fix",
-    "type-check": "tsc --noEmit"
+    "tsc": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
