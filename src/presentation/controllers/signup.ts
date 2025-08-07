@@ -1,10 +1,9 @@
-import { badRequest } from '../helpers/http-helper';
+import { badRequest, serverError } from '../helpers/http-helper';
 import { Controller } from '../protocols/controller';
 import { httpResponse, httpRequest } from '../protocols/http';
 import { EmailValidator } from '../protocols/email-validator';
 import MissingParamError from '../errors/missing-param-error';
 import InvalidParamError from '../errors/invalid-param-error';
-import ServerError from '../errors/server-error';
 
 export default class SignUpController implements Controller {
   private readonly emailValidator: EmailValidator;
@@ -30,10 +29,7 @@ export default class SignUpController implements Controller {
       };
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
-      return {
-        statusCode: 500,
-        body: new ServerError(),
-      };
+      return serverError();
     }
   }
 }
