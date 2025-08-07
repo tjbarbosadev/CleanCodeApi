@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --passWithNoTests",
+    "test:w": "jest --passWithNoTests --watch",
     "prepare": "husky",
     "check": "eslint . --ext .ts",
     "check:fix": "eslint . --ext .ts --fix",
