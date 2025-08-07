@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky",
     "check": "eslint . --ext .ts",
-    "check:fix": "eslint . --ext .ts --fix"
+    "check:fix": "eslint . --ext .ts --fix",
+    "type-check": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
@@ -24,10 +25,13 @@
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@eslint/js": "^9.32.0",
+    "@types/node": "^24.2.0",
     "eslint": "^9.32.0",
     "globals": "^16.3.0",
     "husky": "^9.1.7",
     "jiti": "^2.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
     "typescript-eslint": "^8.39.0"
   }
 }
