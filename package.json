@@ -21,6 +21,8 @@
   "homepage": "https://github.com/tjbarbosadev/CleanCodeApi#readme",
   "description": "",
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@eslint/js": "^9.32.0",
     "eslint": "^9.32.0",
     "globals": "^16.3.0",
