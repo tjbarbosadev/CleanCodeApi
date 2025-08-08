@@ -30,7 +30,6 @@ export default class SignUpController implements Controller {
         statusCode: 200,
         body: {},
       };
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
       return serverError();
     }
